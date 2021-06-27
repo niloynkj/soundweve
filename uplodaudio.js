@@ -147,7 +147,7 @@ firebase.auth().onAuthStateChanged(user => {
     // No user is signed in.
      var Y1 = document.getElementById("filename").value;
     var Y1e = Y1.replace(/\./g, "-"); 
-    var Y1f = "https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/image/"+(Y1);
+    var Y1f = "https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/sound/"+(Y1);
 	 
 	var Y2 = document.getElementById("soundname").value; 
 	
