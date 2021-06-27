@@ -93,7 +93,7 @@ document.getElementById("loder").style.display = 'block';
 var content = document.getElementById('content').value;
 var titles = document.getElementById('title').value;
 var img = document.getElementById('filename').value;
-var html = "<html><body><title>"+(titles)+"</title><h2>"+(content)+" <audio controls><source src='https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/sound/"+(img)+"'></audio></h2></body></html>";
+var html = "<html><body><title>"+(titles)+"</title><h2>"+(content)+"<img src='https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/image/"+(img)+"'></h2></body></html>";
 
 
 document.getElementById('content').value = (html);
