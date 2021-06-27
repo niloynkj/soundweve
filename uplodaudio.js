@@ -172,7 +172,7 @@ firebase.auth().onAuthStateChanged(user => {
 		
 	  
     
-    const url = "https://script.google.com/macros/s/AKfycbx3DJcUsO6waE4goKJPV6s9LIpOG4hA7kpNd08VWwB3t3gSuucpuFeYPVF20cgI6r6Cnw/exec";  // <--- Please set the URL of Web Apps.
+    const url = "https://script.google.com/macros/s/AKfycbxudeqqGs78QInLQw6qKftLEYkbWJA2ijitL1eZc70AjpAk-2fVoj6xDqndEK0f9rbt/exec";  // <--- Please set the URL of Web Apps.
     
     const qs = new URLSearchParams({filename: form.filename.value || file.name, mimeType: file.type, title : form.title.value, content : form.content.value});
     fetch(`${url}?${qs}`, {method: "POST", body: JSON.stringify([...new Int8Array(f.target.result)])})
