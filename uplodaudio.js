@@ -148,14 +148,18 @@ firebase.auth().onAuthStateChanged(user => {
      var Y1 = document.getElementById("filename").value;
     var Y1e = Y1.replace(/\./g, "-"); 
     var Y1f = "https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/image/"+(Y1);
+	 
+	var Y2 = document.getElementById("soundname").value; 
 	
       var uip = document.getElementById("mip").value;
 	  var uip1 = uip.replace(/\./g, "-");
       var fuip = "Soundwebebd/"+(Y1e);
+	
 	 
   firebase.database().ref(fuip).update({
              ip: uip,
 	         img: Y1f,
+	      Name: Y2,
   });		 
 	
 	
