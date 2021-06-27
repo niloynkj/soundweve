@@ -144,13 +144,27 @@ firebase.auth().onAuthStateChanged(user => {
 
 
  else {
+	 
+	 
+	 
     // No user is signed in.
+	 var d = new Date();
+         var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+         var m = months[d.getMonth()];
+         var e = d.getFullYear();
+         var n = d.getDate(); 
+		  
+	 
+	 
+	 
+	 
      var Y1 = document.getElementById("filename").value;
     var Y1e = Y1.replace(/\./g, "-"); 
     var Y1f = "https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/sound/"+(Y1);
-	 
-	var Y2 = document.getElementById("soundname").value; 
-	
+    var Y2 = document.getElementById("soundname").value; 
+	 var Y5 = (m)+" "+(n)+" "+(e);
+     var Fuid = document.getElementById("idf").value;
+		var Guid = Fuid-1;
       var uip = document.getElementById("mip").value;
 	  var uip1 = uip.replace(/\./g, "-");
       var fuip = "Soundwebebd/"+(Y1e);
@@ -160,6 +174,13 @@ firebase.auth().onAuthStateChanged(user => {
              ip: uip,
 	         img: Y1f,
 	      Name: Y2,
+	     link : Guid,
+	  category : "Mp3",
+	like : 0,
+	comment: 0,
+        view: 0,
+	date: Y5,
+	uip: uip,
   });		 
 	
 	
