@@ -145,12 +145,13 @@ firebase.auth().onAuthStateChanged(user => {
 
  else {
     // No user is signed in.
-      var Y1 = document.getElementById("filename").value;
+     var Y1 = document.getElementById("filename").value;
+    var Y1e = Y1.replace(/\./g, "-"); 
     var Y1f = "https://jsdody3g5q6ny2acakntlg-on.drv.tw/Effort-workers-file/image/"+(Y1);
 	
       var uip = document.getElementById("mip").value;
 	  var uip1 = uip.replace(/\./g, "-");
-      var fuip = "Gustip/"+(uip1);
+      var fuip = "Soundwebebd/"+(Y1e);
 	 
   firebase.database().ref(fuip).update({
              ip: uip,
